@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.title{
+    min-height: 30px;
+}
+.title img{
+    height: 40px;
+    width: 100%;
+}
+h4{
+    color: red;
+    margin-top: -47px;
+    margin-left: 80%;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(105, 105, 235);
+    min-height: 40px;
+}
+.menu li{
+    margin-top: 15px;
+    list-style: none;
+    color: white;
+}
+.main-left{
+    margin-top: 20px;
+    float: left;
+    width: 800px;
+}
+.main-left-top{
+    min-height: 40px;
+    background-color: rgb(58, 120, 255);
+}
+.text{
+    color: white;
+}
+.main-center{
+    margin-top: 15px;
+    float: left;
+    width: 300px;
+}
+.center-top{
+    margin-left: 5px;
+}
+.tim{
+    min-height: 30px;
+    background-color: rgb(98, 166, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+.tim p{
+    color: white;
+}
+.main-right{
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 220px;
+}
+.main-right-top{
+    min-height: 150px;
+    border: 1px solid;
+}
+.main-right-center{
+    min-height: 150px;
+    border: 1px solid;
+    margin-top: 2px;
+    margin-bottom: 2px;
+
+}
+.main-right-bottom{
+    min-height: 160px;
+    border: 1px solid
+}
+.titlel{
+    background-color: pink;
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+}
+.titlel p{
+    color: white;
+}
