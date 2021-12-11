@@ -13,34 +13,111 @@ html {
 }
 
 #header {
+    position: fixed;
     height: 46px;
     background-color: #000;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav, .subnav {
+    list-style: none;
 }
 
 #nav li {
     display: inline-block;
+    position: relative;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+#nav > li > a { 
+    color: #fff;
+    padding: 0 24px;
+    text-transform: uppercase;
 }
 
 #nav li a {
     line-height: 46px;
-    color: white;
     text-decoration: none;
-    padding: 0 24px;
-    display: inline-block;
 }
 
-#nav li:hover a {
-    color:black;
-    background-color:#ccc;
+#nav li:hover > a {
+    color: #000;
+    background-color: #ccc;
+    display: block;
 }
 
+#nav .subnav li {
+    width: 150px;
+}
+
+#nav .subnav a {
+    color: #000;
+    line-height: 38px;
+    padding: 0 15px;
+}
 #nav .subnav {
     display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+#nav .ti-angle-double-down {
+    font-size: 12px;
+}
+
+#header #nav-search {
+    float: right;
+    color: #fff;
+    font-size: 18px;
+}
+
+#header .ti-search {
+    line-height: 46px;
+    padding: 0 23px;
+    font-weight: bold;
+}
+
+#header .ti-search:hover {
+    background-color: rgb(253, 48, 48);
+    cursor: pointer;
+    display: block;
 }
 
 #slider {
-
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/HIT-WEB/web_test/asset/image/silder_1.jpg') top center / cover no-repeat;
 }
+
+#slider #text-content {
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+#slider #text-first {
+    font-weight: 500;
+    font-size: 26px;
+}
+
+#slider #text-final {
+    font-size: 15px;
+    margin-top: 47px;
+}
+
 
 #content {
 
